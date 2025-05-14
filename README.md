@@ -1,6 +1,6 @@
 # DonInf2 Starting Code
 This some boiler plate code for the DonInf2 course project. Use this code as starting point for your project.
-Sarah fait des tests.
+Sarah fais des tests.
 ## Setup
 ### 1. Repository On Github
 First you need to get a copy of this repository, the best approach is to fork this repository. a fork is a github specific functionality, it creates your own copy of a repository. You need a github account in order to fork a repository.
@@ -21,7 +21,7 @@ Now, each team member can configure his/her local workspace.
 If you want to learn command line tools as well, you can install the git command line on your machine.
 [instructions here](https://github.com/git-guides/install-git)
 
-#### 2.2 Repository local setup ui
+#### 2.2 Repository local setup COUCOU LES LOULOUS
 
 An easy option is to use the Github Desktop application
 - Download the app and install it
