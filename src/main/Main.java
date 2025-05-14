@@ -15,6 +15,7 @@ public class Main {
         StringManipulation.Example();
         ConsoleStylingExample.Example();
         UserInputExample.Example();
+        //Sarah essaie GitHub
 
         System.out.println(StringStyling.StyleString("Starting...", Style.ITALIC, Color.BLACK));
         Game game = new Game();
