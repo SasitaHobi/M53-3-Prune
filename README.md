@@ -21,7 +21,7 @@ Now, each team member can configure his/her local workspace.
 If you want to learn command line tools as well, you can install the git command line on your machine.
 [instructions here](https://github.com/git-guides/install-git)
 
-#### 2.2 Repository local setup
+#### 2.2 Repository local setup ui
 
 An easy option is to use the Github Desktop application
 - Download the app and install it
@@ -61,5 +61,3 @@ A few string manipulation examples are found in the `src/exemples` folder and ca
 Feel free to edit this README as well, it's yours :)
 The format of this file is [markdown](https://markdownlivepreview.com/)
 
-## COUCOU MES LOULOUS
-salut 
