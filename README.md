@@ -21,7 +21,7 @@ Now, each team member can configure his/her local workspace.
 If you want to learn command line tools as well, you can install the git command line on your machine.
 [instructions here](https://github.com/git-guides/install-git)
 
-#### 2.2 Repository local setup COUCOU LES LOULOUS
+#### 2.2 Repository local setup COUCOU LES LOULOUS (ui)
 
 An easy option is to use the Github Desktop application
 - Download the app and install it
