@@ -1,17 +1,16 @@
 package main;
 
-
 public class Game {
+    private Player player1;
+    private WorldMap worldMap;
 
-    public Game(){
+    public Game() {
         System.out.println("Initializing game...");
     }
-    
-    public void run() {
+
+    public void start() {
         System.out.println("Running game...");
         // your runtime code here...
-
-
 
         // end of game
     }
