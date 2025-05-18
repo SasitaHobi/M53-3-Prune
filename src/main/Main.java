@@ -1,6 +1,5 @@
 package main;
 
-
 import examples.ConsoleStylingExample;
 import examples.StringManipulation;
 import examples.UserInputExample;
@@ -18,7 +17,7 @@ public class Main {
 
         System.out.println(StringStyling.StyleString("Starting...", Style.ITALIC, Color.BLACK));
         Game game = new Game();
-        game.run();
+        game.start();
         System.out.println(StringStyling.StyleString("Terminating...", Style.ITALIC, Color.BLACK));
     }
 }
