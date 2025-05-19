@@ -6,4 +6,5 @@ public class WorldMap {
     // get Location int int
     // set PlayerLocation
     // getPlayerLocation
+    //test
 }
