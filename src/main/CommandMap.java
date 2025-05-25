@@ -1,8 +1,8 @@
 package main;
 
 public class CommandMap implements ICommand{
-    private String verb;
-    private String descr;
+    private String verb="map";
+    private String descr="permet d'afficher la carte";
 
     public String execute() {
         String pos = "";

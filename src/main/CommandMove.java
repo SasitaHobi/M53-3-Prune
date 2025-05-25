@@ -6,7 +6,11 @@ public class CommandMove implements ICommand{
 
     public void execute(String direction, Location playerLoc, WorldMap wMap) {
         if (direction.equals("North")) {
-            
+            if (playerLoc.accNorth) {
+                
+            } else {
+                
+            }
         } else {
             
         }
