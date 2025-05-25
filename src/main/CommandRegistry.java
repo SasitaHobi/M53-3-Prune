@@ -1,6 +1,6 @@
 package main;
 
-public class CommandRegidtry {
+public class CommandRegistry {
     // methode execute ()
 
 }
