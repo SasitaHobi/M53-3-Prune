@@ -2,14 +2,32 @@ package main;
 
 public class Player {
     private String name;
-    private Location playerLoc;
-    public String getName(){
+
+    private int playerCol;
+    private int playerRow;
+
+    public String getName() {
         return this.name;
     }
-    public Location getPlayerLoc (){
-        return this.playerLoc;
+
+   
+
+    public void setPlayerLoc(int col, int row) {
+        this.playerCol = col;
+        this.playerRow = row;
     }
-    public void setPlayerLoc (Location newLocation){
-        this.playerLoc=newLocation;
+
+    public int getPlayerCol() {
+        return this.playerCol;
+    }
+
+    public int getPlayerRow() {
+        return this.playerRow;
+    }
+
+    public Player(String name, int playerCol, int playerRow) {
+        this.name = name;
+        this.playerCol = playerCol;
+        this.playerRow = playerRow;
     }
 }
