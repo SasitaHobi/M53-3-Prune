@@ -1,17 +1,19 @@
 package main;
 
-public class CommandUse implements ICommand{
+public class CommandUse implements ICommand {
     private String verb;
     private String descr;
 
-    public String execute(Item it, Location PlayerLoc) {
+    public void execute(String input, Game game) {
         String pos = "";
-        return pos;
+        System.out.println(pos);
     }
-    public String getDescr (){
+
+    public String getDescr() {
         return this.descr;
     }
-    public String getVerb (){
+
+    public String getVerb() {
         return this.verb;
     }
 }

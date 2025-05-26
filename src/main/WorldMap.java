@@ -10,7 +10,6 @@ public class WorldMap {
     public WorldMap(int rows, int cols) {
         map = new Location[rows][cols];
 
-
         map[0][0] = new Location("on verra bien", "", false);
         map[0][1] = new Location("on verra bien", "", false);
         map[0][2] = new Location("on verra bien", "", false);
@@ -26,7 +25,8 @@ public class WorldMap {
     }
 
     public Location getLocation(int row, int col) {
-        if (row < 0 || row >= map.length || col < 0 || col >= map[0].length) return null;
+        if (row < 0 || row >= map.length || col < 0 || col >= map[0].length)
+            return null;
         return map[row][col];
     }
 
@@ -55,4 +55,3 @@ public class WorldMap {
         return map;
     }
 }
-

@@ -1,17 +1,19 @@
 package main;
 
-public class CommandTake implements ICommand{
+public class CommandTake implements ICommand {
     private String verb;
     private String descr;
 
-    public String execute(Location playerLoc) {
+    public void execute(String input, Game game) {
         String result = "";
-        return result;
+        System.out.println(result);
     }
-    public String getDescr (){
+
+    public String getDescr() {
         return this.descr;
     }
-    public String getVerb (){
+
+    public String getVerb() {
         return this.verb;
     }
 }
