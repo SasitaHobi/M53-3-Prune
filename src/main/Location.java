@@ -35,4 +35,4 @@ public class Location implements IPrintable {
 
     public boolean isGrayedOut() {
         return false;
-    }
+    }}
