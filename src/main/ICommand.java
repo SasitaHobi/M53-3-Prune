@@ -1,8 +1,7 @@
 package main;
 
 public interface ICommand {
-    public String getVerb();
-
-    public String getDescr();
-
+    String getVerb();
+    String getDescr();
+    void execute(String input, Game game);
 }
