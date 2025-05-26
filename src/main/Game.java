@@ -12,8 +12,8 @@ public class Game {
         System.out.print("Nom du joueur : ");
         player = new Player(sc.nextLine());
 
-        worldMap = new WorldMap(3, 3);
-        worldMap.setPlayerLocation(1, 1); // Position initiale au centre
+        worldMap = new WorldMap(4, 3);
+        worldMap.setPlayerLocation(1, 1);
 
         CommandRegistry registry = new CommandRegistry();
         List<ICommand> cmds = new ArrayList<>();
@@ -28,7 +28,9 @@ public class Game {
         cmds.add(look);
         cmds.add(help);
 
-        for (ICommand cmd : cmds) registry.register(cmd);
+        for (ICommand cmd : cmds) {
+            registry.register(cmd);
+        }
 
         System.out.println("Le jeu commence. Tapez 'help' pour voir les commandes.");
 

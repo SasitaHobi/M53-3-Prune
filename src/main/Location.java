@@ -25,16 +25,16 @@ public class Location implements IPrintable {
         return descr;
     }
 
+    public String getName() {
+        return this.name;
+    }
     @Override
-    public String getPrintSymbol() {
-        return name.substring(0, 1).toUpperCase();
+    public String getPrintableString() {
+        return this.getName();
     }
 
     public boolean isGrayedOut() {
         return false;
     }
 
-    public String getPrintableString() {
-        return getPrintSymbol();
-    }
 }

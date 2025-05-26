@@ -1,19 +1,31 @@
 package main;
 
-import utils.Array2DPrinter;
+import utils.Array2Dprinter;
+import utils.IPrintable;
 
 public class CommandMap implements ICommand {
     private final String verb = "map";
-    private final String descr = "Affiche la carte du monde";
+    private final String descr = "Affiche la map";
 
     @Override
-    public String getVerb() { return verb; }
+    public String getVerb() { 
+        return this.verb; 
+    }
 
     @Override
-    public String getDescr() { return descr; }
+    public String getDescr() { 
+        return this.descr; 
+    }
+
+   
 
     @Override
     public void execute(String input, Game game) {
-        Array2DPrinter.print2DArray(game.worldMap.getMap());
+        IPrintable [][] map=game.worldMap.getMap();
+       String output= Array2Dprinter.print2DArray(map, 0, 0);
+        System.out.println(output);
+        
     }
-}
+
+    } 
+
