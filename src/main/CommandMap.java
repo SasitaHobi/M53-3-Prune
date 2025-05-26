@@ -14,5 +14,10 @@ public class CommandMap implements ICommand{
     public String getVerb (){
         return this.verb;
     }
+    @Override
+    public String run(String[] args){
+        Location [][]= get ;
+        return
+    }
 
 }

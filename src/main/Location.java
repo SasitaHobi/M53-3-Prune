@@ -1,11 +1,14 @@
 package main;
 
-public class Location {
+import utils.IPrintable;
+
+public class Location implements IPrintable{
     //adresse de Location
     private int col;
     private int row;
     private String name;
     private String desrc;
+    private boolean isLocked;
 
     //chemin d'accès pour player
     public boolean accNorth;
@@ -32,5 +35,19 @@ public class Location {
     }
     public int getRow(Location location){
         return this.row;
+    }
+    public String getName(){
+        return this.name;
+    }
+    public boolean getIsLocked(){
+        return this.isLocked;
+    }
+    @Override
+    public String getPrintableString() {
+        return this.getName();
+    }
+    @Override
+    public boolean isGrayedOut() {
+       return this.getIsLocked();
     }
 }
