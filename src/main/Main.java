@@ -1,8 +1,5 @@
 package main;
 
-import examples.ConsoleStylingExample;
-import examples.StringManipulation;
-import examples.UserInputExample;
 import utils.Color;
 import utils.StringStyling;
 import utils.Style;
@@ -18,3 +15,4 @@ public class Main {
         System.out.println(StringStyling.StyleString("Terminating...", Style.ITALIC, Color.BLACK));
     }
 }
+//coucou
