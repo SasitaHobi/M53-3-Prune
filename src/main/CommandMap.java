@@ -22,6 +22,7 @@ public class CommandMap implements ICommand {
         IPrintable[][] map = game.worldMap.getMap();
         String output = Array2Dprinter.print2DArray(map, 0, 0);
         System.out.println(output);
+        
 
     }
 
