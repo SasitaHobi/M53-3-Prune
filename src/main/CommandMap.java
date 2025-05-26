@@ -8,24 +8,21 @@ public class CommandMap implements ICommand {
     private final String descr = "Affiche la map";
 
     @Override
-    public String getVerb() { 
-        return this.verb; 
+    public String getVerb() {
+        return this.verb;
     }
 
     @Override
-    public String getDescr() { 
-        return this.descr; 
+    public String getDescr() {
+        return this.descr;
     }
-
-   
 
     @Override
     public void execute(String input, Game game) {
-        IPrintable [][] map=game.worldMap.getMap();
-       String output= Array2Dprinter.print2DArray(map, 0, 0);
+        IPrintable[][] map = game.worldMap.getMap();
+        String output = Array2Dprinter.print2DArray(map, 0, 0);
         System.out.println(output);
-        
+
     }
 
-    } 
-
+}

@@ -1,6 +1,6 @@
 package main;
 
 public class LetterItem {
-// arrayList? Item
-//method getInventory
+    // arrayList? Item
+    // method getInventory
 }

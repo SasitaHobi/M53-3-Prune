@@ -1,17 +1,22 @@
 package main;
 
-public class CommandInspect implements ICommand{
+public class CommandInspect implements ICommand {
     private String verb;
     private String descr;
 
-    public String execute() {
+    @Override
+    public void execute(String input, Game game) {
         String result = "";
-        return result;
+        System.out.println(result);
     }
-    public String getDescr (){
+
+    @Override
+    public String getDescr() {
         return this.descr;
     }
-    public String getVerb (){
+
+    @Override
+    public String getVerb() {
         return this.verb;
     }
 }
