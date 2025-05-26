@@ -14,6 +14,6 @@ public class CommandMap implements ICommand {
 
     @Override
     public void execute(String input, Game game) {
-        Array2Dprinter.print2DArray(game.worldMap.getMap());
+        Array2DPrinter.print2DArray(game.worldMap.getMap());
     }
 }

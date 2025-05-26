@@ -2,7 +2,7 @@ package main;
 
 public class CommandMove implements ICommand {
     private final String verb = "move";
-    private final String descr = "Déplace le joueur dans une direction";
+    private final String descr = "Déplace le joueur dans une direction (north, south, east, west)";
 
     @Override
     public String getVerb() { return verb; }
@@ -18,8 +18,8 @@ public class CommandMove implements ICommand {
         switch (input.toLowerCase()) {
             case "north": row--; break;
             case "south": row++; break;
-            case "east": col++; break;
-            case "west": col--; break;
+            case "east":  col++; break;
+            case "west":  col--; break;
             default:
                 System.out.println("Unknown direction.");
                 return;

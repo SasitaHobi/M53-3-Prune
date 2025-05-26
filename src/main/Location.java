@@ -1,36 +1,40 @@
 package main;
 
-public class Location {
-    //adresse de Location
-    private int col;
-    private int row;
-    private String name;
-    private String desrc;
+import utils.IPrintable;
 
-    //chemin d'accès pour player
-    public boolean accNorth;
-    public boolean accEast;
-    public boolean accSouth;
-    public boolean accWest;
-    // method unlock
+public class Location implements IPrintable {
+    private final String name;
+    private final String descr;
+    private boolean locked;
 
-    public Location (int col, int row, String name, String  descr, boolean accNorth, boolean accEast, boolean accSouth, boolean accWest){
-        this.col=col;
-        this.row=row;
-        this.name=name;
-        this.desrc=descr;
-        this.accNorth=accNorth;
-        this.accEast=accEast;
-        this.accSouth=accSouth;
-        this.accWest=accWest;
+    public Location(String name, String descr, boolean locked) {
+        this.name = name;
+        this.descr = descr;
+        this.locked = locked;
     }
-    public Location geLocation(){
-        return this.geLocation();
+
+    public void unlock() {
+        this.locked = false;
     }
-    public int getCol(Location location){
-        return this.col;
+
+    public boolean isLocked() {
+        return locked;
     }
-    public int getRow(Location location){
-        return this.row;
+
+    public String getDescr() {
+        return descr;
+    }
+
+    @Override
+    public String getPrintSymbol() {
+        return name.substring(0, 1).toUpperCase();
+    }
+
+    public boolean isGrayedOut() {
+        return false;
+    }
+
+    public String getPrintableString() {
+        return getPrintSymbol();
     }
 }

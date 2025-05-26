@@ -4,7 +4,7 @@ import java.util.List;
 
 public class CommandHelp implements ICommand {
     private final String verb = "help";
-    private final String descr = "Affiche toutes les commandes disponibles";
+    private final String descr = "Liste les commandes disponibles";
     private final List<ICommand> commands;
 
     public CommandHelp(List<ICommand> commands) {

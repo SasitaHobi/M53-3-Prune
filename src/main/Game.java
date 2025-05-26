@@ -1,34 +1,46 @@
 package main;
 
-import examples.StringManipulation;
+import java.util.*;
 
 public class Game {
-    private Player player1;
-    private WorldMap worldMap;
-    private ItemManager itemManager;
-
-    public Game() {
-        System.out.println("Initializing game...");
-    }
+    public Player player;
+    public WorldMap worldMap;
 
     public void start() {
-        WorldMap wMap1 = new WorldMap();
-        Player player1 = new Player("Toto", 0, 0);
-        System.out.println("Running game...");
+        Scanner sc = new Scanner(System.in);
 
-        wMap1.setupMap();
-        
-        String userInput = "move South";
-        userInput = userInput.trim();
-        userInput = userInput.toLowerCase();
-        String[] partsInput = userInput.split(" ");
+        System.out.print("Nom du joueur : ");
+        player = new Player(sc.nextLine());
 
-        if (partsInput[0].equals("move")) {
-            CommandMove cMove = new CommandMove();
-            cMove.execute(partsInput[1], wMap1.getLocation(player1.getPlayerCol(), player1.getPlayerRow()), worldMap);
-            
-            System.out.println("moved player to the " + partsInput[1]);
+        worldMap = new WorldMap(3, 3);
+        worldMap.setPlayerLocation(1, 1); // Position initiale au centre
+
+        CommandRegistry registry = new CommandRegistry();
+        List<ICommand> cmds = new ArrayList<>();
+
+        ICommand move = new CommandMove();
+        ICommand map = new CommandMap();
+        ICommand look = new CommandLook();
+        ICommand help = new CommandHelp(cmds);
+
+        cmds.add(move);
+        cmds.add(map);
+        cmds.add(look);
+        cmds.add(help);
+
+        for (ICommand cmd : cmds) registry.register(cmd);
+
+        System.out.println("Le jeu commence. Tapez 'help' pour voir les commandes.");
+
+        while (true) {
+            System.out.print("> ");
+            String input = sc.nextLine();
+            if (input.equals("quit")) break;
+            registry.execute(input, this);
         }
     }
 
+    public static void main(String[] args) {
+        new Game().start();
+    }
 }
