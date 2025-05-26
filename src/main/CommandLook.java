@@ -1,17 +1,18 @@
 package main;
 
-public class CommandLook implements ICommand{
-    private String verb;
-    private String descr;
+public class CommandLook implements ICommand {
+    private final String verb = "look";
+    private final String descr = "Affiche ce qu'il y a dans la zone actuelle";
 
-    public String execute(Location playerLoc) {
-        String result = "";
-        return result;
-    }
-    public String getDescr (){
-        return this.descr;
-    }
-    public String getVerb (){
-        return this.verb;
+    @Override
+    public String getVerb() { return verb; }
+
+    @Override
+    public String getDescr() { return descr; }
+
+    @Override
+    public void execute(String input, Game game) {
+        Location loc = game.worldMap.getPlayerLocation();
+        System.out.println(loc.getDescr());
     }
 }
