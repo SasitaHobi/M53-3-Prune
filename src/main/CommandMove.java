@@ -5,10 +5,14 @@ public class CommandMove implements ICommand {
     private final String descr = "Déplace le joueur dans une direction (north, south, east, west)";
 
     @Override
-    public String getVerb() { return verb; }
+    public String getVerb() {
+        return verb;
+    }
 
     @Override
-    public String getDescr() { return descr; }
+    public String getDescr() {
+        return descr;
+    }
 
     @Override
     public void execute(String input, Game game) {
@@ -16,10 +20,18 @@ public class CommandMove implements ICommand {
         int col = game.worldMap.getPlayerCol();
 
         switch (input.toLowerCase()) {
-            case "north": row--; break;
-            case "south": row++; break;
-            case "east":  col++; break;
-            case "west":  col--; break;
+            case "north":
+                row--;
+                break;
+            case "south":
+                row++;
+                break;
+            case "east":
+                col++;
+                break;
+            case "west":
+                col--;
+                break;
             default:
                 System.out.println("Unknown direction.");
                 return;

@@ -37,7 +37,8 @@ public class Game {
         while (true) {
             System.out.print("> ");
             String input = sc.nextLine();
-            if (input.equals("quit")) break;
+            if (input.equals("quit"))
+                break;
             registry.execute(input, this);
         }
     }

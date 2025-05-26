@@ -28,6 +28,7 @@ public class Location implements IPrintable {
     public String getName() {
         return this.name;
     }
+
     @Override
     public String getPrintableString() {
         return this.getName();
@@ -35,4 +36,5 @@ public class Location implements IPrintable {
 
     public boolean isGrayedOut() {
         return false;
-    }}
+    }
+}

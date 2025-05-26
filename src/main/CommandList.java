@@ -1,17 +1,21 @@
 package main;
 
-public class CommandList implements ICommand{
+public class CommandList implements ICommand {
     private String verb;
     private String descr;
 
-    public String execute() {
+    @Override
+    public void execute(String input, Game game) {
         String cList = "";
-        return cList;
+        System.out.println(cList);
     }
-    public String getDescr (){
+
+    @Override
+    public String getDescr() {
         return this.descr;
     }
-    public String getVerb (){
+
+    public String getVerb() {
         return this.verb;
     }
 }

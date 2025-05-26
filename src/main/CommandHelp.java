@@ -12,10 +12,14 @@ public class CommandHelp implements ICommand {
     }
 
     @Override
-    public String getVerb() { return verb; }
+    public String getVerb() {
+        return verb;
+    }
 
     @Override
-    public String getDescr() { return descr; }
+    public String getDescr() {
+        return descr;
+    }
 
     @Override
     public void execute(String input, Game game) {
