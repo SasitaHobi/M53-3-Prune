@@ -6,11 +6,13 @@ public class Location implements IPrintable {
     private final String name;
     private final String descr;
     private boolean locked;
+    private Item item;
 
-    public Location(String name, String descr, boolean locked) {
+    public Location(String name, String descr, boolean locked, Item item) {
         this.name = name;
         this.descr = descr;
         this.locked = locked;
+        this.item= item;
     }
 
     public void unlock() {
