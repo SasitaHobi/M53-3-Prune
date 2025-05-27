@@ -9,19 +9,19 @@ public class WorldMap {
 
     public WorldMap(int rows, int cols) {
         map = new Location[rows][cols];
-
-        map[0][0] = new Location("on verra bien", "", false);
-        map[0][1] = new Location("on verra bien", "", false);
-        map[0][2] = new Location("on verra bien", "", false);
-        map[1][0] = new Location("on verra bien", "", false);
-        map[1][1] = new Location("on verra bien", "", false);
-        map[1][2] = new Location("on verra bien", "", false);
-        map[2][0] = new Location("on verra bien", "", false);
-        map[2][1] = new Location("on verra bien", "", false);
-        map[2][2] = new Location("on verra bien", "", false);
-        map[3][0] = new Location("on verra bien", "", false);
-        map[3][1] = new Location("on verra bien", "", false);
-        map[3][2] = new Location("on verra bien", "", false);
+Item potion= new Item("a", "b");
+        map[0][0] = new Location("on verra bien", "", false, Item potion= new Item("potion", "bois la potion pour gagner des HP"));
+        map[0][1] = new Location("on verra bien", "", false, null);
+        map[0][2] = new Location("on verra bien", "", false, null);
+        map[1][0] = new Location("on verra bien", "", false, epee= new Item("épée", "vous pouvez découper des trucs"));
+        map[1][1] = new Location("on verra bien", "", false,null);
+        map[1][2] = new Location("on verra bien", "", false, null);
+        map[2][0] = new Location("on verra bien", "", false, null);
+        map[2][1] = new Location("on verra bien", "", false, null);
+        map[2][2] = new Location("on verra bien", "", false, key= new Item("key", "ceci est une clé"));
+        map[3][0] = new Location("on verra bien", "", false, null);
+        map[3][1] = new Location("on verra bien", "", false, null);
+        map[3][2] = new Location("on verra bien", "", false, null);
     }
 
     public Location getLocation(int row, int col) {
