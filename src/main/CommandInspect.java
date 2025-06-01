@@ -1,8 +1,6 @@
 package main;
 
 public class CommandInspect implements ICommand {
-    private String verb;
-    private String descr;
     private final String verb = "inspect";
     private final String descr = "Affiche le contenu de l'inventaire";
 
