@@ -1,6 +1,9 @@
 package main;
 
 public class PuzzleItem extends Item {
-    // arrayList? Item
-    // method getInventory
+
+    public PuzzleItem(String name, String descr) {
+        super(name, descr);
+    }
+
 }
