@@ -6,13 +6,13 @@ public class Location implements IPrintable {
     private final String name;
     private final String descr;
     private boolean locked;
-    private Item item;
+    public Item item; // temporaire, faudra qu'on remette à jour
 
     public Location(String name, String descr, boolean locked, Item item) {
         this.name = name;
         this.descr = descr;
         this.locked = locked;
-        this.item= item;
+        this.item = item;
     }
 
     public void unlock() {
@@ -29,6 +29,14 @@ public class Location implements IPrintable {
 
     public String getName() {
         return this.name;
+    }
+
+    public Item getItem() {
+        return this.item;
+    }
+
+    public void setItem(Item item) {
+        this.item = item;
     }
 
     @Override

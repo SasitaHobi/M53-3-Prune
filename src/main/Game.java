@@ -21,11 +21,17 @@ public class Game {
         ICommand move = new CommandMove();
         ICommand map = new CommandMap();
         ICommand look = new CommandLook();
+        ICommand take = new CommandTake();
+        ICommand inspect = new CommandInspect();
+        ICommand use = new CommandUse();
         ICommand help = new CommandHelp(cmds);
 
         cmds.add(move);
         cmds.add(map);
         cmds.add(look);
+        cmds.add(take);
+        cmds.add(inspect);
+        cmds.add(use);
         cmds.add(help);
 
         for (ICommand cmd : cmds) {
@@ -47,3 +53,4 @@ public class Game {
         new Game().start();
     }
 }
+
