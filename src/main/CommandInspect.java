@@ -20,13 +20,11 @@ public class CommandInspect implements ICommand {
 
     @Override
     public String getDescr() {
-        return this.descr;
         return descr;
     }
 
     @Override
     public String getVerb() {
-        return this.verb;
         return verb;
     }
 }
