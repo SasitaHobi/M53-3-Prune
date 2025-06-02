@@ -1,6 +1,10 @@
 package main;
 
-public class KeyItem {
-    // arrayList? Item
-    // method getInventory
+public class KeyItem extends Item{
+
+    public KeyItem(String name, String descr) {
+        super(name, descr);
+        //TODO Auto-generated constructor stub
+    }
+    
 }

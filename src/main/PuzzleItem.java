@@ -6,6 +6,5 @@ public class PuzzleItem extends Item {
         super(name, descr);
         //TODO Auto-generated constructor stub
     }
-    // arrayList? Item
-    // method getInventory
+   
 }

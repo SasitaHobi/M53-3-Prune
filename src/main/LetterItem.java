@@ -1,6 +1,10 @@
 package main;
 
-public class LetterItem {
-    // arrayList? Item
-    // method getInventory
+public class LetterItem extends Item{
+
+    public LetterItem(String name, String descr) {
+        super(name, descr);
+        //TODO Auto-generated constructor stub
+    }
+    
 }
