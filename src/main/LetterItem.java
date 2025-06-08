@@ -1,10 +1,11 @@
 package main;
 
 public class LetterItem extends Item{
+    public boolean isSolved;
 
-    public LetterItem(String name, String descr) {
+    public LetterItem(String name, String descr, boolean isSolved) {
         super(name, descr);
-        //TODO Auto-generated constructor stub
+        isSolved=this.isSolved;
     }
     
 }

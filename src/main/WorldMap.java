@@ -13,6 +13,9 @@ Item potion= new Item("potion", "bois la potion pour gagner des HP");
 Item epee= new Item("épée", "vous pouvez découper des trucs");
 Item key= new KeyItem("key", "ceci est une clé");
 Item treasure= new Item("treasure", "Félicitations! Vous avez trouvé le trésor!");
+Item riddle1= new LetterItem("Mon premier", "Mon premier  est un surplus...", false);
+
+
         map[0][0] = new Location("Prairie", "Ceci est une prairie.", false, potion);
         map[0][1] = new Location("Chemin", "Ceci est un chemin.", false, key);
         map[0][2] = new Location("Cascade", "Ceci est une cascade.", false, null);
@@ -23,7 +26,7 @@ Item treasure= new Item("treasure", "Félicitations! Vous avez trouvé le tréso
         map[2][1] = new Location("Marais", "Ceci est un marais.", false, null);
         map[2][2] = new Location("Montagne", "Ceci est une montagne.", false, null);
         map[3][0] = new Location("Grotte", "Ceci est une grotte.", false, null);
-        map[3][1] = new Location("Sommet", "Ceci est un sommet.", false, null);
+        map[3][1] = new Location("Sommet", "Ceci est un sommet.", false, riddle1);
         map[3][2] = new Location("Château", "Ceci est un château.", true, treasure);
     }
 
