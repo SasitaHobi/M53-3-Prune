@@ -13,7 +13,7 @@ public class Game {
         player = new Player(sc.nextLine());
 
         worldMap = new WorldMap(4, 3);
-        worldMap.setPlayerLocation(1, 1);
+        worldMap.setPlayerLocation(0, 0);
 
         CommandRegistry registry = new CommandRegistry();
         List<ICommand> cmds = new ArrayList<>();
