@@ -11,13 +11,13 @@ public class WorldMap {
         map = new Location[rows][cols];
 Item potion= new Item("potion", "bois la potion pour gagner des HP");
 Item epee= new Item("épée", "vous pouvez découper des trucs");
-Item key= new KeyItem("key", "ceci est une clé");
+
 Item treasure= new Item("treasure", "Félicitations! Vous avez trouvé le trésor!");
-Item riddle1= new LetterItem("Mon premier", "Mon premier  est un surplus...", false);
+Item riddle1= new LetterItem("Mon premier", "Mon premier  est un surplus...");
 
 
         map[0][0] = new Location("Prairie", "Ceci est une prairie.", false, potion);
-        map[0][1] = new Location("Chemin", "Ceci est un chemin.", false, key);
+        map[0][1] = new Location("Chemin", "Ceci est un chemin.", false, null);
         map[0][2] = new Location("Cascade", "Ceci est une cascade.", false, null);
         map[1][0] = new Location("Rivière", "Ceci est une rivière.", false, epee);
         map[1][1] = new Location("Lac", "Ceci est un lac.", false, null);

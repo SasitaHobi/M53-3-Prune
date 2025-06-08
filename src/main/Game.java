@@ -25,6 +25,7 @@ public class Game {
         ICommand inspect = new CommandInspect();
         ICommand use = new CommandUse();
         ICommand help = new CommandHelp(cmds);
+         ICommand say = new CommandSay();
 
         cmds.add(move);
         cmds.add(map);
@@ -33,6 +34,7 @@ public class Game {
         cmds.add(inspect);
         cmds.add(use);
         cmds.add(help);
+        cmds.add(say);
 
         for (ICommand cmd : cmds) {
             registry.register(cmd);
