@@ -20,10 +20,11 @@ public class CommandMap implements ICommand {
     @Override
     public void execute(String input, Game game) {
         IPrintable[][] map = game.worldMap.getMap();
-        String output = Array2Dprinter.print2DArray(map, game.worldMap.getPlayerRow(), game.worldMap.getPlayerCol());
+        String output = Array2Dprinter.print2DArray(
+            map,
+            game.worldMap.getPlayerRow(),
+            game.worldMap.getPlayerCol()
+        );
         System.out.println(output);
-        
-
     }
-
 }

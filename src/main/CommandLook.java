@@ -18,5 +18,10 @@ public class CommandLook implements ICommand {
     public void execute(String input, Game game) {
         Location loc = game.worldMap.getPlayerLocation();
         System.out.println(loc.getDescr());
+
+        Item item = loc.getItem();
+        if (item != null) {
+            System.out.println("Il y a un objet ici : " + item.getName() + " - " + item.getDescr());
+        }
     }
 }
