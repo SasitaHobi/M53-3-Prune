@@ -15,6 +15,12 @@ public class WorldMap {
         Item key = new KeyItem("key", "ceci est une clé");
         Item treasure = new Item("treasure", "Félicitations! Vous avez trouvé le trésor!");
         Item teleportCrystal = new Item("teleport crystal", "Un cristal magique permettant de se téléporter.");
+Item potion= new Item("potion", "bois la potion pour gagner des HP");
+Item epee= new Item("épée", "vous pouvez découper des trucs");
+
+Item treasure= new Item("Trésor", "Félicitations! Vous avez trouvé le trésor! Vous pouvez quitter le jeu grâce à la commande quit.");
+Item riddle1= new LetterItem("Mon premier", "Mon premier  est un surplus...");
+
 
         map[0][0] = new Location("Prairie", "Ceci est une prairie.", false, riddle1);
         map[0][1] = new Location("Chemin", "Ceci est un chemin.", false, null);
