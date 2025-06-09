@@ -18,7 +18,7 @@ public class CommandUse implements ICommand {
         }
 
 
-        if (item.getName().equals("Clé")) {
+        if (item.getName().equals("Clef")) {
             item.unlockLocation(game);
         }
     }

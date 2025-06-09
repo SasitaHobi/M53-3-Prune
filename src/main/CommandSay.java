@@ -53,7 +53,7 @@ public class CommandSay implements ICommand {
                     System.out.println(
                             "Bien joué, c'est la bonne réponse! Une clé apparaît mystérieusement dans votre inventaire.");
                     stack++;
-                    Item key= new Item("Clé", "Ceci est une clé. Une étiquette y est suspendue, avec le mot: château.");
+                    Item key= new Item("Clef", "Ceci est une clef. Une étiquette y est suspendue, avec le mot: château.");
                     game.player.getInventory().addItem(key);
                 } else {
                     System.out.println("Ce n'est pas la bonne réponse...");

@@ -12,7 +12,7 @@ public class WorldMap {
 Item potion= new Item("potion", "bois la potion pour gagner des HP");
 Item epee= new Item("épée", "vous pouvez découper des trucs");
 
-Item treasure= new Item("treasure", "Félicitations! Vous avez trouvé le trésor!");
+Item treasure= new Item("Trésor", "Félicitations! Vous avez trouvé le trésor! Vous pouvez quitter le jeu grâce à la commande quit.");
 Item riddle1= new LetterItem("Mon premier", "Mon premier  est un surplus...");
 
 
