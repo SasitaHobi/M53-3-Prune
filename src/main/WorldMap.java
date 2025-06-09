@@ -9,8 +9,7 @@ public class WorldMap {
 
     public WorldMap(int rows, int cols) {
         map = new Location[rows][cols];
-
-        Item riddle1 = new LetterItem("Mon premier", "...mon premier est un peu trop...");
+        Item riddle1= new LetterItem("Mon premier", "Mon premier  est un surplus...");
         Item epee = new Item("épée", "vous pouvez découper des trucs");
         Item key = new KeyItem("key", "ceci est une clé");
         Item potion= new Item("potion", "bois la potion pour gagner des HP");
