@@ -6,7 +6,8 @@ public class Location implements IPrintable {
     private final String name;
     private final String descr;
     private boolean locked;
-    public Item item; // temporaire, faudra qu'on remette à jour
+    private boolean visited = false;
+    public Item item;
 
     public Location(String name, String descr, boolean locked, Item item) {
         this.name = name;
@@ -37,6 +38,14 @@ public class Location implements IPrintable {
 
     public void setItem(Item item) {
         this.item = item;
+    }
+
+    public boolean isVisited() {
+        return visited;
+    }
+
+    public void setVisited(boolean visited) {
+        this.visited = visited;
     }
 
     @Override

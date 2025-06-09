@@ -21,4 +21,8 @@ public class CommandRegistry {
             System.out.println("Commande inconnue.");
         }
     }
+
+    public ICommand getCommand(String verb) {
+        return commandMap.get(verb);
+    }
 }

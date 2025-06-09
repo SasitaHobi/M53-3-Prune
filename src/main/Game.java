@@ -2,6 +2,7 @@ package main;
 
 import java.util.*;
 
+
 public class Game {
     public Player player;
     public WorldMap worldMap;
@@ -24,8 +25,8 @@ public class Game {
         ICommand take = new CommandTake();
         ICommand inspect = new CommandInspect();
         ICommand use = new CommandUse();
+        ICommand say = new CommandSay();
         ICommand help = new CommandHelp(cmds);
-         ICommand say = new CommandSay();
 
         cmds.add(move);
         cmds.add(map);
@@ -33,8 +34,8 @@ public class Game {
         cmds.add(take);
         cmds.add(inspect);
         cmds.add(use);
-        cmds.add(help);
         cmds.add(say);
+        cmds.add(help);
 
         for (ICommand cmd : cmds) {
             registry.register(cmd);
@@ -43,6 +44,13 @@ public class Game {
         System.out.println("Le jeu commence. Tapez 'help' pour voir les commandes.");
 
         while (true) {
+            if (player.getInventory().findItemByName("teleport crystal") != null &&
+                registry.getCommand("teleport") == null) {
+                ICommand teleport = new CommandTeleport();
+                registry.register(teleport);
+                cmds.add(teleport);
+            }
+
             System.out.print("> ");
             String input = sc.nextLine();
             if (input.equals("quit"))
@@ -55,4 +63,3 @@ public class Game {
         new Game().start();
     }
 }
-
