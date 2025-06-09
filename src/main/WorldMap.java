@@ -26,7 +26,6 @@ public class WorldMap {
         map[1][0] = new Location("Rivière", "Ceci est une rivière.", false, epee);
         map[1][1] = new Location("Lac", "Ceci est un lac.", false, null);
         map[1][2] = new Location("Forêt", "Ceci est une forêt.", false, null);
-        map[2][0] = new Location("Clairière", "Ceci est une clairère.", false, null);
         map[2][0] = new Location("Clairière", "Ceci est une clairière.", false, null);
         map[2][1] = new Location("Marais", "Ceci est un marais.", false, null);
         map[2][2] = new Location("Montagne", "Ceci est une montagne.", false, teleportCrystal);
