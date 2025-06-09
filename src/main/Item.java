@@ -20,7 +20,7 @@ public class Item {
         int pCol = game.worldMap.getPlayerCol();
         int pRow = game.worldMap.getPlayerRow();
 
-        boolean check = ((pCol == 3) && (pRow == 1)) || ((pCol == 2) && (pRow == 2));
+        boolean check = ((pCol == 1) && (pRow == 3)) || ((pCol == 2) && (pRow == 2));
         if (check) {
             
             Location endLoc=game.worldMap.getLocation(3, 2);
