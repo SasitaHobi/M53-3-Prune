@@ -10,10 +10,9 @@ public class WorldMap {
     public WorldMap(int rows, int cols) {
         map = new Location[rows][cols];
         Item riddle1= new LetterItem("Mon premier", "Mon premier  est un surplus...");
-        Item epee = new Item("épée", "vous pouvez découper des trucs");
-        Item key = new KeyItem("key", "ceci est une clé");
-        Item potion= new Item("potion", "bois la potion pour gagner des HP");
-        Item treasure = new Item("treasure", "Félicitations! Vous avez trouvé le trésor!");
+        Item epee = new Item("Épée", "vous pouvez découper des trucs");
+        Item potion= new Item("Potion", "bois la potion pour gagner des HP");
+        Item treasure = new Item("Trésor", "Félicitations! Vous avez trouvé le trésor! Pour quitter la partie, utiliser la commande quit.");
         Item teleportCrystal = new Item("teleport crystal", "Un cristal magique permettant de se téléporter.");
 
         map[0][0] = new Location("Prairie", "Ceci est une prairie.", false, potion);

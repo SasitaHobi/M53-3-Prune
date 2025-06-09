@@ -51,7 +51,7 @@ public class CommandSay implements ICommand {
             } else {
                 if (input.toLowerCase().equals("trone")) {
                     System.out.println(
-                            "Bien joué, c'est la bonne réponse! Une clé apparaît mystérieusement dans votre inventaire.");
+                            "Bien joué, c'est la bonne réponse! Une clef apparaît mystérieusement dans votre inventaire.");
                     stack++;
                     Item key= new Item("Clef", "Ceci est une clef. Une étiquette y est suspendue, avec le mot: château.");
                     game.player.getInventory().addItem(key);
