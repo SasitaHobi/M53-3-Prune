@@ -17,14 +17,9 @@ public class CommandUse implements ICommand {
             return;
         }
 
-        Location loc = game.worldMap.getPlayerLocation();
 
-        if (item.getName().equalsIgnoreCase("key") && loc.isLocked()) {
-            loc.unlock();
-            game.player.getInventory().removeItem(item);
-            System.out.println("Vous avez déverrouillé la zone avec la clé !");
-        } else {
-            System.out.println("Cet objet ne peut pas être utilisé ici.");
+        if (item.getName().equals("Clé")) {
+            item.unlockLocation(game);
         }
     }
 
