@@ -21,7 +21,7 @@ public class CommandLook implements ICommand {
 
         Item item = loc.getItem();
         if (item != null) {
-            System.out.println("Il y a un objet ici : " + item.getName() + " - " + item.getDescr());
+            System.out.println("Il y a un objet ici : " + item.getName() + ". ");
         }
     }
 }

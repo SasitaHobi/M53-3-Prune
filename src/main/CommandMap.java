@@ -20,6 +20,8 @@ public class CommandMap implements ICommand {
     @Override
     public void execute(String input, Game game) {
         IPrintable[][] map = game.worldMap.getMap();
+        
+        map [3][2].isGrayedOut();
         String output = Array2Dprinter.print2DArray(
             map,
             game.worldMap.getPlayerRow(),

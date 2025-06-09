@@ -1,5 +1,6 @@
 package main;
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 public class LetterItem {
     // arrayList? Item
@@ -12,4 +13,14 @@ public class LetterItem extends Item{
     }
     
 >>>>>>> Stashed changes
+=======
+public class LetterItem extends Item{
+    public boolean isSolved;
+
+    public LetterItem(String name, String descr) {
+        super(name, descr);
+        
+    }
+    
+>>>>>>> sarah-dev
 }
